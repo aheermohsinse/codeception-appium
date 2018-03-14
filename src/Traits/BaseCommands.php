@@ -394,7 +394,7 @@ trait BaseCommands
     * @source route.json
     *
     **/
-    public function maximizeWindow($windowhandle)
+    public function maximizeWindow()
     {
             return $this->driverCommand(BaseConstants::$POST, '/window/maximize');
     }
