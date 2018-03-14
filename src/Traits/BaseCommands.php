@@ -396,9 +396,9 @@ trait BaseCommands
     **/
     public function maximizeWindow($windowhandle)
     {
-            $url = '/window/:windowhandle/maximize';
-            $url = str_ireplace(':windowhandle', $windowhandle, $url);
-            return $this->driverCommand(BaseConstants::$POST, $url);
+            //$url = '/window/:windowhandle/maximize';
+            //$url = str_ireplace(':windowhandle', $windowhandle, $url);
+            return $this->driverCommand(BaseConstants::$POST, '/window/maximize');
     }
     /**
     * getCookies
